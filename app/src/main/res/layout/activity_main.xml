@@ -8,61 +8,95 @@
         tools:context=".MainActivity"
         android:background="@color/colorWhite">
 
-    <android.support.design.widget.AppBarLayout
+    <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:id="@+id/relative_layout">
 
-        <android.support.v7.widget.Toolbar
+        <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/ToolBarTop"
-                android:background="@drawable/grey_border_bottom" android:minHeight="30dp" app:maxButtonHeight="24dp"
-        >
+                android:layout_height="50dp"
+                android:id="@+id/rel_layout_top"
+                android:layout_alignParentTop="true">
 
-
-            <android.support.v7.widget.LinearLayoutCompat
+            <android.support.design.widget.AppBarLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:weightSum="100"
-                    android:orientation="horizontal" android:clipToPadding="true" android:paddingTop="10dp"
-                    android:paddingBottom="10dp">
+                    android:layout_height="wrap_content">
 
-                <android.support.v7.widget.AppCompatImageButton
-                        android:layout_height="match_parent"
-                        android:id="@+id/tool_bar_top_settings"
-                        android:src="@drawable/group_15"
-                        android:theme="@style/MyTheme"
-                        android:layout_width="0dp" android:layout_weight="20"/>
+                <android.support.v7.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ToolBarTop"
+                        android:background="@drawable/grey_border_bottom" android:minHeight="30dp"
+                        app:maxButtonHeight="24dp"
+                >
 
-                <android.support.v7.widget.AppCompatImageButton android:layout_width="0dp"
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="100"
+                            android:orientation="horizontal" android:clipToPadding="true" android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                        <android.support.v7.widget.AppCompatImageButton
+                                android:layout_height="match_parent"
+                                android:id="@+id/tool_bar_top_settings"
+                                android:src="@drawable/group_15"
+                                android:theme="@style/MyTheme"
+                                android:layout_width="0dp" android:layout_weight="20"/>
+
+                        <android.support.v7.widget.AppCompatImageButton
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/tool_bar_top_momstrong_move"
+                                android:src="@drawable/momstrong_move_script"
+                                android:theme="@style/myScriptButtonStyle"
+                                android:layout_weight="60"/>
+
+                        <android.support.v7.widget.AppCompatImageButton
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/tool_bar_top_meg_message"
+                                android:src="@drawable/megs_message_icon"
+                                android:theme="@style/MyTheme"
+                                android:layout_weight="20"/>
+
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rel_layout_middle"
+                android:layout_below="@id/rel_layout_top"
+                android:layout_above="@id/rel_layout_bottom">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/rel_layout_bottom"
+                android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.BottomNavigationView android:layout_width="match_parent"
                                                                 android:layout_height="match_parent"
-                                                                android:id="@+id/tool_bar_top_momstrong_move"
-                                                                android:src="@drawable/momstrong_move_script"
-                                                                android:theme="@style/myScriptButtonStyle"
-                                                                android:layout_weight="60"/>
-
-                <android.support.v7.widget.AppCompatImageButton android:layout_width="0dp"
-                                                                android:layout_height="match_parent"
-                                                                android:id="@+id/tool_bar_top_meg_message"
-                                                                android:src="@drawable/megs_message_icon"
-                                                                android:theme="@style/MyTheme"
-                                                                android:layout_weight="20"/>
+                                                                android:id="@+id/bottomNavViewBar"
+                                                                android:background="@drawable/grey_border_top"
+                                                                app:menu="@menu/bottom_navigation_menu">
 
 
-            </android.support.v7.widget.LinearLayoutCompat>
-
-        </android.support.v7.widget.Toolbar>
-    </android.support.design.widget.AppBarLayout>
-
-    <android.support.design.widget.BottomNavigationView android:layout_width="match_parent"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/bottomNavViewBar"
-                                                        android:background="@drawable/grey_border_top"
-                                                        app:menu="@menu/bottom_navigation_menu">
+            </android.support.design.widget.BottomNavigationView>
 
 
-    </android.support.design.widget.BottomNavigationView>
+        </RelativeLayout>
 
+    </RelativeLayout>
 
 
     <!--<android.support.design.widget.AppBarLayout-->

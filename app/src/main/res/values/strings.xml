@@ -5,4 +5,13 @@
     <string name="follow_meg">Follow Meg</string>
     <string name="refer_friend">Refer A Friend</string>
     <string name="log_out">Log Out</string>
+    <string name="progress">Progress</string>
+    <string name="gym_strong">Gym Strong</string>
+    <string name="home_Strong">Home Strong</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_progress">ProgressActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>

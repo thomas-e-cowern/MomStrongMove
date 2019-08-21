@@ -1,10 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<android.support.design.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".HomeStrong">
+        tools:context=".MainActivity"
+        android:background="@color/colorWhite">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+        <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/appBarLayout">
+
+            <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ToolBarTop"
+                    android:background="@drawable/grey_border_bottom" android:minHeight="30dp"
+                    app:maxButtonHeight="24dp"
+            >
+
+                <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="100"
+                        android:orientation="horizontal" android:clipToPadding="true" android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                    <android.support.v7.widget.AppCompatImageButton
+                            android:layout_height="match_parent"
+                            android:id="@+id/tool_bar_top_settings"
+                            android:src="@android:drawable/ic_menu_set_as"
+                            android:theme="@style/MyTheme"
+                            android:layout_width="0dp" android:layout_weight="20"/>
+
+                    <android.support.v7.widget.AppCompatImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tool_bar_top_momstrong_move"
+                            android:theme="@style/myScriptButtonStyle"
+                            android:layout_weight="60"/>
+
+                    <android.support.v7.widget.AppCompatImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tool_bar_top_meg_message"
+                            android:src="@android:drawable/ic_dialog_email"
+                            android:theme="@style/MyTheme"
+                            android:layout_weight="20"/>
+
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.design.widget.BottomNavigationView android:layout_width="wrap_content"
+                                                            android:layout_height="0dp"
+                                                            android:id="@+id/bottomNavViewBar"
+                                                            android:background="@drawable/grey_border_top"
+                                                            app:menu="@menu/bottom_navigation_menu"
+                                                            app:layout_constraintBottom_toBottomOf="parent"
+                                                            app:layout_constraintStart_toStartOf="parent"
+                                                            app:layout_constraintEnd_toEndOf="parent">
+
+
+        </android.support.design.widget.BottomNavigationView>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

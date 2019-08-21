@@ -9,9 +9,9 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".GymStrong">
+        <activity android:name=".GymStrongActivity">
         </activity>
-        <activity android:name=".HomeStrong">
+        <activity android:name=".HomeStrongActivity">
         </activity>
         <activity
                 android:name=".ProgressActivity"

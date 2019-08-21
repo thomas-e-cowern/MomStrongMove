@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MomStrongMove</string>
+    <string name="manage_account">Manage My Account</string>
+    <string name="notifications">Notifications</string>
+    <string name="follow_meg">Follow Meg</string>
+    <string name="refer_friend">Refer A Friend</string>
+    <string name="log_out">Log Out</string>
+</resources>

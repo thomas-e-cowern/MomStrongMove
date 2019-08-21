@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/progress"
+        android:icon="@drawable/progress_icon"
+        android:title="Progress">
+    </item>
+
+    <item
+            android:id="@+id/home_strong"
+            android:icon="@drawable/home_inactive"
+            android:title="Home Strong">
+    </item>
+
+    <item
+            android:id="@+id/gym_strong"
+            android:icon="@drawable/gym_inactive"
+            android:title="Gym Strong">
+    </item>
+
+</menu>

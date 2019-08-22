@@ -26,7 +26,8 @@ class ReferFriendActivity : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_SEND)
 
         val shareSubject = "Share Momstrong!"
-        val shareBody : String = "This is the body"
+        val shareBody : String = "Hey, I just found this app called Momstrong Move! It gives me new workouts each week and the videos are great.  Here is the link if you want to give it a try ☺️\n" +
+                "https://itunes.apple.com/us/app/momstrong/id1447765301?ls=1&mt=8"
 
         intent.setType("text/plain")
 

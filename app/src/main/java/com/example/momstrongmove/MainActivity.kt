@@ -24,9 +24,18 @@ class MainActivity : AppCompatActivity() {
         tabs.setupWithViewPager(viewPager)
 
         val settings : AppCompatImageButton
+        val megMessage : AppCompatImageButton
         settings = tool_bar_top_settings
+        megMessage = tool_bar_top_meg_message
+
         settings.setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            startActivity(intent)
+        }
+
+        megMessage.setOnClickListener {
+            val intent = Intent(this, MegMessageActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }

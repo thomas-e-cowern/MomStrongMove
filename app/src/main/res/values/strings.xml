@@ -29,4 +29,7 @@
     <string name="meg_instagram">Meg\'s Instagram</string>
     <string name="momstrongutah_button">\@momstrongutah</string>
     <string name="momstrongmove_label">\@momstrongmove</string>
+    <string name="refer_freind_label">Refer A Friend</string>
+    <string name="google_play_label">Google Play Store Link</string>
+    <string name="google_play_button">Share Momstrong Move App</string>
 </resources>

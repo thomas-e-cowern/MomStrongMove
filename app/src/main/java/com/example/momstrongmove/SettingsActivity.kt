@@ -14,6 +14,7 @@ class SettingsActivity : AppCompatActivity() {
         val account_info = manage_account_button
         val notifications = notifications_button
         val followMeg = follow_meg_button
+        val referFriend = refer_friend_button
 
         account_info.setOnClickListener {
             val intent = Intent(this, AccountActivity::class.java)
@@ -29,6 +30,12 @@ class SettingsActivity : AppCompatActivity() {
 
         followMeg.setOnClickListener {
             val intent = Intent(this, FollowMegActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            startActivity(intent)
+        }
+
+        referFriend.setOnClickListener {
+            val intent = Intent(this, ReferFriendActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }

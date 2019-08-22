@@ -1,10 +1,13 @@
 package com.example.momstrongmove
 
 import android.content.Intent
+import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
+import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
+import kotlinx.android.synthetic.main.activity_home_strong.*
 
 class HomeStrongActivity : AppCompatActivity() {
 
@@ -21,6 +24,11 @@ class HomeStrongActivity : AppCompatActivity() {
         val menuItem = menu.getItem(1)
 
         menuItem.setChecked(true)
+
+        home_recycler_view.layoutManager = LinearLayoutManager(this)
+
+        home_recycler_view.adapter = HomeStrongAdapter()
+
     }
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->

@@ -36,4 +36,6 @@
     <string name="home_progress_label">This Week\'s Progress</string>
     <string name="home_percentage_label">0%</string>
     <string name="home_workouts_label">This Week\'s Workouts</string>
+    <string name="video_row_label">Total Body/ Cardio</string>
+    <string name="home_comment_label">My favorite of the week</string>
 </resources>

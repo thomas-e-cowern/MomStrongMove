@@ -21,4 +21,12 @@
     <string name="age">Age</string>
     <string name="state">State</string>
     <string name="account_edit_button">Edit</string>
+    <string name="notification_text_label">Notification</string>
+    <string name="meg_message_label">Meg\'s Message</string>
+    <string name="new_workouts_label">New Workouts</string>
+    <string name="push_notification_label">Push Notifications</string>
+    <string name="follow_meg_label">Follow Meg</string>
+    <string name="meg_instagram">Meg\'s Instagram</string>
+    <string name="momstrongutah_button">\@momstrongutah</string>
+    <string name="momstrongmove_label">\@momstrongmove</string>
 </resources>

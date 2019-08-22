@@ -9,18 +9,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".AccountActivity">
+        </activity>
         <activity android:name=".GymStrongActivity">
         </activity>
         <activity android:name=".HomeStrongActivity">
-        </activity>
-        <activity
-                android:name=".ProgressActivity"
-                android:label="@string/title_activity_progress"
-                android:parentActivityName=".MainActivity"
-                android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                    android:name="android.support.PARENT_ACTIVITY"
-                    android:value="com.example.momstrongmove.MainActivity"/>
         </activity>
         <activity android:name=".SettingsActivity">
         </activity>

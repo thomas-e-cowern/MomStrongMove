@@ -15,4 +15,10 @@
     <string name="tab_text_1">Goals</string>
     <string name="tab_text_2">Monthly</string>
     <string name="tab_text_3">Yearly</string>
+    <string name="account">Account</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="age">Age</string>
+    <string name="state">State</string>
+    <string name="account_edit_button">Edit</string>
 </resources>

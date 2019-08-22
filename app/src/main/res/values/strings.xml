@@ -32,4 +32,8 @@
     <string name="refer_freind_label">Refer A Friend</string>
     <string name="google_play_label">Google Play Store Link</string>
     <string name="google_play_button">Share Momstrong Move App</string>
+    <string name="at_home_workouts_label">At Home Workouts</string>
+    <string name="home_progress_label">This Week\'s Progress</string>
+    <string name="home_percentage_label">0%</string>
+    <string name="home_workouts_label">This Week\'s Workouts</string>
 </resources>

@@ -35,8 +35,7 @@ class HomeStrongActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.progress -> {
                 Log.i("Clicking", "Progress Clicked")
-//                val progressFragment = ProgressFragment.newInstance()
-//                openFragment(progressFragment)
+
 
                 val intent = Intent(this, MainActivity::class.java)
                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
@@ -45,8 +44,7 @@ class HomeStrongActivity : AppCompatActivity() {
             }
             R.id.home_strong -> {
                 Log.i("Clicking", "Home Strong Clicked")
-//                val intent = Intent(this, HomeStrongActivity::class.java)
-//                startActivity(intent)
+
                 return@OnNavigationItemSelectedListener true
             }
             R.id.gym_strong -> {

@@ -38,4 +38,6 @@
     <string name="home_workouts_label">This Week\'s Workouts</string>
     <string name="video_row_label">Total Body/ Cardio</string>
     <string name="home_comment_label">My favorite of the week</string>
+    <string name="home_duration_label">Duration: 36 Minutes</string>
+    <string name="home_equipment_label">Equipment: 5# and 10# Dumbells</string>
 </resources>

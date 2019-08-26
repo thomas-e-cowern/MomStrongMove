@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,9 +7,7 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:background="@color/colorWhite">
-    <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+
 
         <android.support.design.widget.AppBarLayout
                 android:layout_width="match_parent"
@@ -60,17 +58,112 @@
             </android.support.v7.widget.Toolbar>
         </android.support.design.widget.AppBarLayout>
 
-        <android.support.design.widget.BottomNavigationView android:layout_width="wrap_content"
-                                                            android:layout_height="0dp"
-                                                            android:id="@+id/bottomNavViewBar"
-                                                            android:background="@drawable/grey_border_top"
-                                                            app:menu="@menu/bottom_navigation_menu"
-                                                            app:layout_constraintBottom_toBottomOf="parent"
-                                                            app:layout_constraintStart_toStartOf="parent"
-                                                            app:layout_constraintEnd_toEndOf="parent">
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/gym_workouts_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/gym_workouts_label"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
 
-        </android.support.design.widget.BottomNavigationView>
+    <TextView
+            android:id="@+id/gym_progrss_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-    </android.support.constraint.ConstraintLayout>
-</android.support.design.widget.CoordinatorLayout>
+            android:layout_marginTop="8dp"
+            android:text="@string/home_progress_label"
+            app:layout_constraintEnd_toEndOf="@id/gym_workouts_label"
+            app:layout_constraintStart_toStartOf="@+id/gym_workouts_label"
+            app:layout_constraintTop_toBottomOf="@id/gym_workouts_label" />
+
+    <ImageView
+            android:id="@+id/gym_imageView"
+            android:layout_width="22dp"
+            android:layout_height="24dp"
+
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/gym_workouts_label"
+            app:layout_constraintTop_toBottomOf="@id/gym_progrss_label"
+            app:srcCompat="@drawable/group_15" />
+
+    <TextView
+            android:id="@+id/gym_percentage_label"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/home_percentage_label"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/gym_imageView"
+            app:layout_constraintStart_toEndOf="@id/gym_imageView"
+            app:layout_constraintTop_toTopOf="@id/gym_imageView" />
+
+    <ProgressBar
+            android:id="@+id/gym_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="#00494646"
+            app:layout_constraintBottom_toBottomOf="@+id/gym_percentage_label"
+            app:layout_constraintEnd_toEndOf="@+id/gym_workouts_label"
+            app:layout_constraintStart_toEndOf="@+id/gym_percentage_label"
+            app:layout_constraintTop_toTopOf="@+id/gym_percentage_label" />
+
+    <TextView
+            android:id="@+id/gym_this_week_workout_label"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/home_workouts_label"
+            app:layout_constraintStart_toStartOf="@+id/gym_imageView"
+            app:layout_constraintTop_toBottomOf="@+id/gym_imageView" />
+
+    <View
+            android:id="@+id/divider2"
+            android:layout_width="395dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/gym_recyclerView"
+            app:layout_constraintEnd_toEndOf="@+id/gym_workouts_label"
+            app:layout_constraintStart_toStartOf="@id/gym_this_week_workout_label"
+            app:layout_constraintTop_toBottomOf="@+id/gym_this_week_workout_label" />
+
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/gym_recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavViewBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <android.support.design.widget.BottomNavigationView android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/bottomNavViewBar"
+            android:background="@drawable/grey_border_top"
+            app:menu="@menu/bottom_navigation_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+    </android.support.design.widget.BottomNavigationView>
+
+</android.support.constraint.ConstraintLayout>

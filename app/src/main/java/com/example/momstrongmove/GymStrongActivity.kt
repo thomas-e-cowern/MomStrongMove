@@ -4,7 +4,10 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
+import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
+import kotlinx.android.synthetic.main.activity_gym_strong.*
+import kotlinx.android.synthetic.main.activity_home_strong.*
 
 class GymStrongActivity : AppCompatActivity() {
 
@@ -21,6 +24,9 @@ class GymStrongActivity : AppCompatActivity() {
         val menuItem = menu.getItem(2)
 
         menuItem.setChecked(true)
+
+        gym_recyclerView.layoutManager = LinearLayoutManager(this)
+        gym_recyclerView.adapter = GymStrongAdapter()
     }
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->

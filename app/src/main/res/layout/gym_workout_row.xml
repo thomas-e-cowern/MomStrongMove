@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/gym_cell_complete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/gym_workout_cell_title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/gym_workout_cell_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/gym_workout_cell_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/gym_workout_cell_message"
+            app:layout_constraintStart_toStartOf="@+id/gym_workout_cell_title"
+            app:layout_constraintTop_toBottomOf="@+id/gym_workout_cell_title" />
+
+    <TextView
+            android:id="@+id/gym_cell_line"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#FAE6060D"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gym_workout_cell_message" />
+
+    <Button
+            android:id="@+id/gym_cell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#F7F10505"
+            android:text="@string/gym_cell_view_button"
+            app:layout_constraintEnd_toEndOf="@+id/gym_cell_line"
+            app:layout_constraintTop_toBottomOf="@+id/gym_cell_line" />
+
+    <View
+            android:id="@+id/divider4"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="#A8CAC0C0"
+            app:layout_constraintEnd_toEndOf="@+id/gym_cell_line"
+            app:layout_constraintStart_toStartOf="@+id/gym_cell_line"
+            app:layout_constraintTop_toBottomOf="@+id/gym_cell" />
+
+    <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/gym_cell_complete_button"
+            android:textColor="#F8B40505"
+            app:layout_constraintBottom_toBottomOf="@+id/divider4"
+            app:layout_constraintEnd_toEndOf="@+id/divider4"
+            app:layout_constraintTop_toTopOf="@+id/divider4"
+            app:layout_constraintVertical_bias="0.285" />
+</android.support.constraint.ConstraintLayout>

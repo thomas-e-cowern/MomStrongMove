@@ -40,4 +40,11 @@
     <string name="home_comment_label">My favorite of the week</string>
     <string name="home_duration_label">Duration: 36 Minutes</string>
     <string name="home_equipment_label">Equipment: 5# and 10# Dumbells</string>
+    <string name="gym_workouts_label">Gym Workouts</string>
+    <string name="gym_workout_cell_title">Upper Body/Care</string>
+    <string name="gym_workout_cell_message">Get excited Upper Body and Core coming</string>
+    <string name="gym_cell_view_button">View</string>
+    <string name="gym_cell_complete_button">Mark Complete</string>
+    <string name="personal_goals_textView">Personal Goals</string>
+    <string name="fragment_month_textView">Days I Completed My Workout</string>
 </resources>

@@ -57,7 +57,7 @@ class HomeStrongActivity : AppCompatActivity() {
                 println(body)
 
                 val gson = GsonBuilder().create()
-                val homeFeed = gson.fromJson(body, HomeFeed::class.java)
+                val homeFeed = gson.fromJson(body, Models.HomeFeed::class.java)
 
                 runOnUiThread {
                     home_recycler_view.adapter = HomeStrongAdapter(homeFeed)
@@ -97,8 +97,3 @@ class HomeStrongActivity : AppCompatActivity() {
     }
 }
 
-class HomeFeed (val videos: List<Video>)
-
-class Video(val id: Int, val name: String, val link: String, val imageUrl: String, val numberOfViews: Int, val channel: Channel)
-
-class Channel(val name: String, val profileImageUrl: String)

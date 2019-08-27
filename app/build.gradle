@@ -20,6 +20,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    allprojects {
+        repositories {
+            jcenter()
+        }
+    }
+
 }
 
 dependencies {
@@ -38,4 +44,5 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:4.1.0'
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.applandeo:material-calendar-view:1.4.0'
 }

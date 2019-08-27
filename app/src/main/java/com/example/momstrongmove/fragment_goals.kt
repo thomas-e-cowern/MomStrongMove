@@ -3,9 +3,11 @@ package com.example.momstrongmove
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.fragment_goals.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -20,6 +22,16 @@ private const val ARG_PARAM3 = "param3"
  */
 class fragment_goals : Fragment() {
 
+
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+//        goals_recycler_view.layoutManager = LinearLayoutManager(this.context)
+//        goals_recycler_view.adapter = GoalsAdapter()
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,5 +40,11 @@ class fragment_goals : Fragment() {
         return inflater.inflate(R.layout.fragment_goals, container, false)
     }
 
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        goals_recycler_view.layoutManager = LinearLayoutManager(activity?.applicationContext)
+        goals_recycler_view.adapter = GoalsAdapter()
+    }
 
 }

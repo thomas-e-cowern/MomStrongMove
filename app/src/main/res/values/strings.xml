@@ -48,4 +48,6 @@
     <string name="personal_goals_textView">Personal Goals</string>
     <string name="fragment_month_textView">Days I Completed My Workout</string>
     <string name="year_textView">My Year of Momstrong Move Progress</string>
+    <string name="year_row_month_textView">Month</string>
+    <string name="year_row_percentage_textView">0%</string>
 </resources>

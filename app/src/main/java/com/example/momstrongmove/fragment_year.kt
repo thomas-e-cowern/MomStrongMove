@@ -26,7 +26,7 @@ class fragment_year : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        year_recyclerView.layoutManager = GridLayoutManager(activity?.applicationContext, 4, LinearLayoutManager.HORIZONTAL, false)
+        year_recyclerView.layoutManager = GridLayoutManager(activity?.applicationContext, 3, LinearLayoutManager.HORIZONTAL, false)
         year_recyclerView.adapter = YearAdapter()
 
     }

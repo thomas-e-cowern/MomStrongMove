@@ -45,4 +45,6 @@
         <item name="tabIndicatorHeight">2dp</item>
     </style>
 
+    <style name="year_textView">My Year of Momstrong Move Progress</style>
+
 </resources>

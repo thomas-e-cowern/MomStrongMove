@@ -47,4 +47,5 @@
     <string name="gym_cell_complete_button">Mark Complete</string>
     <string name="personal_goals_textView">Personal Goals</string>
     <string name="fragment_month_textView">Days I Completed My Workout</string>
+    <string name="year_textView">My Year of Momstrong Move Progress</string>
 </resources>

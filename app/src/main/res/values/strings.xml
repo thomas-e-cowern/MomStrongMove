@@ -50,4 +50,8 @@
     <string name="year_textView">My Year of Momstrong Move Progress</string>
     <string name="year_row_month_textView">Month</string>
     <string name="year_row_percentage_textView">0%</string>
+    <string name="gym_strong_detail_title">Upper Body/ Core</string>
+    <string name="gym_detail_header_comment">Come out of this one feeling the burn!</string>
+    <string name="gym_detail_section_title">Warm-up</string>
+    <string name="gum_detail_row_section_summary">Repaet this 2 - 3 x</string>
 </resources>

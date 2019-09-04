@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.momstrongmove">
+        package="com.example.momstrongmove">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
             android:allowBackup="true"
@@ -11,27 +11,21 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".MegMessageActivity">
-        </activity>
-        <activity android:name=".ReferFriendActivity">
-        </activity>
-        <activity android:name=".FollowMegActivity">
-        </activity>
-        <activity android:name=".NotificationActivity">
-        </activity>
-        <activity android:name=".AccountActivity">
-        </activity>
-        <activity android:name=".GymStrongActivity">
-        </activity>
-        <activity android:name=".HomeStrongActivity">
-        </activity>
-        <activity android:name=".SettingsActivity">
-        </activity>
+        <activity android:name=".GymStrongDetailActivity"></activity>
+        <activity android:name=".SplashScreenActivity" />
+        <activity android:name=".MegMessageActivity" />
+        <activity android:name=".ReferFriendActivity" />
+        <activity android:name=".FollowMegActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".GymStrongActivity" />
+        <activity android:name=".HomeStrongActivity" />
+        <activity android:name=".SettingsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
